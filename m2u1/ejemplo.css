@@ -1,0 +1,33 @@
+/*  font-family: "Open Sans", serif;
+font-family: "Playwrite VN Guides", serif;
+*/
+#caja{
+    width: 300px;
+    height: 300px;
+    background-color: yellow;
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 41%, rgba(0,212,255,1) 100%);
+    margin: 100px;
+    padding: 20px;
+
+    border-radius: 20px 0 50px 10px;
+    box-shadow: 0 0 25px black;
+    border: 2px solid white;
+}
+
+.texto{
+    background-color: orange;
+    column-count: 5;
+    column-gap: 60px;
+}
+
+.texto p{
+    margin: 0;
+}
+
+h1{
+    font-family: "Playwrite VN Guides", serif; 
+}
+
+h2 , p{
+    font-family: "Open Sans", serif; 
+}
