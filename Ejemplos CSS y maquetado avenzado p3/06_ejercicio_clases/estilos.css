@@ -35,8 +35,6 @@ nav ul li a {
     font-size: 20px;
 }
 
-
-
 main {
     width: 40%;
     background-color: #F7DC6F;
@@ -52,3 +50,33 @@ footer {
     text-align: center;
 }
 
+@media screen and (max-width:600px) {
+    body{
+        background-color: green;
+    }
+
+    header{
+        text-align: center;
+    }
+
+    .holder { 
+        flex-wrap: wrap;
+    }
+
+    nav {
+        width: 100%;
+        border-bottom: 2px solid black;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    main {
+        width: 100%;
+        border-bottom: 2px solid black;
+    }
+}
