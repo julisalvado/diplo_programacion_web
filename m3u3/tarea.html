@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript p1</title>
+</head>
+<body>
+    <script>
+        // Ejercicio 1
+        const distancia = parseInt(prompt("Ingrese la distancia: "));
+
+        if (distancia >= 0 && distancia <= 1000) {
+            document.write("Medio de transporte: pie");
+        } else if (distancia >= 1000 && distancia <= 10000) {
+            document.write("Medio de transporte: bicicleta");
+        } else if (distancia >= 10000 && distancia <= 30000) {
+            document.write("Medio de transporte: colectivo");
+        } else if (distancia >= 30000 && distancia <= 100000) {
+            document.write("Medio de transporte: auto");
+        } else if (distancia >= 100000) {
+            document.write("Medio de transporte: avión")
+        }
+
+        document.write("<br>")
+
+        //Ejercicio 2
+        const num1 = parseInt(prompt("Ingrese el primer número: "));
+        const num2 = parseInt(prompt("Ingrese el segundo número: "));
+        const num3 = parseInt(prompt("Ingrese el tercer número: "));
+        const num4 = parseInt(prompt("Ingrese el cuarto número: "));
+
+        const array = [num1, num2, num3, num4];
+        
+        let mayor = num1
+        for (let i = 1; i < array.length; i++) {
+            if (array[i] > mayor) {
+                mayor = array[i]
+            }
+        }
+        document.write("El número más grande es: ", mayor)
+
+    </script>
+</body>
+</html>
