@@ -9,19 +9,20 @@
     <script>
         // Ejercicio 1
         const distancia = parseInt(prompt("Ingrese la distancia: "));
+        let transporte = ""
 
         if (distancia >= 0 && distancia <= 1000) {
-            document.write("Medio de transporte: pie");
-        } else if (distancia >= 1000 && distancia <= 10000) {
-            document.write("Medio de transporte: bicicleta");
-        } else if (distancia >= 10000 && distancia <= 30000) {
-            document.write("Medio de transporte: colectivo");
-        } else if (distancia >= 30000 && distancia <= 100000) {
-            document.write("Medio de transporte: auto");
-        } else if (distancia >= 100000) {
-            document.write("Medio de transporte: avión")
+            transporte = "pie";
+        } else if (distancia > 1000 && distancia <= 10000) {
+            transporte = "bicicleta";
+        } else if (distancia > 10000 && distancia <= 30000) {
+            dtransporte = "colectivo";
+        } else if (distancia > 30000 && distancia <= 100000) {
+            transporte = "auto";
+        } else if (distancia > 100000) {
+            transporte = "avión";
         }
-
+        document.write(`Medio de transporte: ${transporte}`)
         document.write("<br>")
 
         //Ejercicio 2
