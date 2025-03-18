@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <link rel="stylesheet" href="estilos_ej1.css">
+</head>
+<body>
+    <div class="cajas">
+        <div class="caja" id="caja1" ></div>
+        <div class="caja" id="caja2"></div>
+        <div class="caja" id="caja3"></div>
+    </div>
+    <script>
+        function cambiarFondo(id) {
+            if (id == "caja1") {
+                document.body.style.backgroundColor = "#fff333";
+            }
+            else if (id == "caja2") {
+                document.body.style.backgroundColor = "#ff33c7";
+            }
+            else if (id == "caja3") {
+                document.body.style.backgroundColor = "#33afff";
+            }
+        }
+
+        const cajas = document.querySelectorAll(".caja");
+        cajas.forEach(caja => {
+            caja.addEventListener("click", function() {
+                cambiarFondo(caja.id)
+            })
+        })
+        
+    </script>
+</body>
+</html>
