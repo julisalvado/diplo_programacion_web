@@ -39,6 +39,11 @@ app.get('/', function(req,res) {
   })
 });
 
+app.get('/saludo/:nombre', function(req, res) {
+  const nombre = req.params.nombre;
+  res.send(`¡Hola ${nombre}! Bienvenido/a a la app`);
+});
+
 app.post('/ingresar', function(req,res) {
   if (req.body.nombre) {
     req.session.nombre = req.body.nombre
